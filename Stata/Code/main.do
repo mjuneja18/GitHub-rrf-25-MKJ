@@ -10,9 +10,9 @@
 	display "`c(username)'" 	//Check username and copy to set project globals by user
 	
 	* Add file paths to DataWork folder and the Github folder for RRF2024
-	if "`c(username)'" == "" {
-        *global onedrive "???/DataWork"
-		global github 	"???/GitHub-rrf-24"
+	if "`c(username)'" == "wb624368" {
+        global onedrive "C:\Users\wb624368\OneDrive - WBG\Documents\4 Learning\1 Data Career Stream\Transparent and Credible Analytics\DataWork"
+		global github 	"C:\Users\wb624368\Downloads\GitHub-rrf-25-MKJ"
     }
 	
 	
@@ -21,7 +21,7 @@
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs"
 	
-	sysdir set PLUS "???"
+	sysdir set PLUS "$code/ado"
 
 
 	* Install packages 
